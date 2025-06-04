@@ -1,0 +1,85 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "id": 1011985,
+      "title": "Kung Fu Panda 4",
+      "media_type": "movie",
+      "poster_path": "/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
+      "backdrop_path": "/kPSWH7RXNATn7aE9TLAEr3BfFPS.jpg",
+      "overview": "Po is gearing up to become the spiritual leader of his Valley of Peace...",
+      "release_date": "2024-03-02",
+      "vote_average": 7.1,
+      "vote_count": 2847,
+      "genre_ids": [16, 10751, 35, 28],
+      "popularity": 3045.123
+    },
+    {
+      "id": 94997,
+      "name": "House of the Dragon",
+      "media_type": "tv",
+      "poster_path": "/t9XkeE7HzOsdQcDDDapDYh8Rrmt.jpg",
+      "backdrop_path": "/7Ihe4wEyFtWXBDtJY6ZxGGQJXg.jpg",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power...",
+      "first_air_date": "2022-08-21",
+      "vote_average": 8.4,
+      "vote_count": 4682,
+      "genre_ids": [18, 10765, 10759],
+      "popularity": 1549.267
+    },
+    {
+      "id": 155,
+      "title": "The Dark Knight",
+      "media_type": "movie",
+      "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "backdrop_path": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+      "overview": "Batman raises the stakes in his war on crime...",
+      "release_date": "2008-07-16",
+      "vote_average": 8.5,
+      "vote_count": 32423,
+      "genre_ids": [18, 28, 80, 53],
+      "popularity": 156.234
+    },
+    {
+      "id": 1396,
+      "name": "Breaking Bad",
+      "media_type": "tv",
+      "poster_path": "/3xnWaLQjelJDDF7LT1WBo6f4BRe.jpg",
+      "backdrop_path": "/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+      "overview": "Walter White, a New Mexico chemistry teacher, is diagnosed with Stage III cancer...",
+      "first_air_date": "2008-01-20",
+      "vote_average": 8.9,
+      "vote_count": 13482,
+      "genre_ids": [18, 80],
+      "popularity": 743.789
+    },
+    {
+      "id": 496243,
+      "title": "Parasite",
+      "media_type": "movie",
+      "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "backdrop_path": "/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+      "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks...",
+      "release_date": "2019-05-30",
+      "vote_average": 8.5,
+      "vote_count": 17726,
+      "genre_ids": [35, 53, 18],
+      "popularity": 98.456
+    },
+    {
+      "id": 119051,
+      "name": "Wednesday",
+      "media_type": "tv",
+      "poster_path": "/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+      "backdrop_path": "/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+      "overview": "Wednesday Addams is sent to Nevermore Academy...",
+      "first_air_date": "2022-11-23",
+      "vote_average": 8.5,
+      "vote_count": 8765,
+      "genre_ids": [35, 80, 18, 9648, 10765],
+      "popularity": 432.789
+    }
+  ],
+  "total_pages": 1000,
+  "total_results": 20000
+}
