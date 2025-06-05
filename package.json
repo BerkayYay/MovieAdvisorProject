@@ -1,0 +1,28 @@
+{
+  "name": "movie-advisor-project",
+  "version": "1.0.0",
+  "description": "Movie Advisor - Full Stack Application",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend/movie-advisor-api && npm run start:dev",
+    "frontend": "cd MovieRecommendationApp && npm start",
+    "install:all": "npm install && cd backend/movie-advisor-api && npm install && cd ../../MovieRecommendationApp && npm install",
+    "android": "cd MovieRecommendationApp && npm run android",
+    "ios": "cd MovieRecommendationApp && npm run ios",
+    "build:backend": "cd backend/movie-advisor-api && npm run build",
+    "test:backend": "cd backend/movie-advisor-api && npm run test",
+    "setup": "npm run install:all && echo '🚀 All dependencies installed! Configure your .env files and run: npm run dev'"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "react-native",
+    "nestjs",
+    "movie-app",
+    "mobile-app"
+  ],
+  "author": "Movie Advisor Team",
+  "license": "MIT"
+}

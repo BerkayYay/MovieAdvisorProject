@@ -59,6 +59,41 @@ A comprehensive movie and TV show recommendation application built with React Na
 
 ## 🚀 Quick Start
 
+### Option A: Single Command (Recommended) 🚀
+
+**The easiest way to run both backend and frontend with one command:**
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/MovieAdvisorProject.git
+cd MovieAdvisorProject
+
+# Install all dependencies (backend + frontend + root)
+npm run setup
+
+# Set up your databases and API keys (see sections below)
+# Configure .env files in both backend/movie-advisor-api/ and MovieRecommendationApp/
+
+# Run both backend and frontend with one command
+npm run dev
+```
+
+**That's it!** Both services will start in one terminal with colored output.
+
+To run the mobile app on device/emulator, open a new terminal:
+
+```bash
+# For Android
+npm run android
+
+# For iOS (macOS only)
+npm run ios
+```
+
+### Option B: Separate Terminals (Advanced)
+
+If you prefer to run services separately or need to debug individually:
+
 ### 1. Clone the Repository
 
 ```bash
@@ -81,20 +116,12 @@ npm install
 # Configure environment variables (create .env file)
 cp .env.example .env
 # Edit .env with your database credentials
-
-# Run database migrations
-npm run migration:run
-
-# Start the development server
-npm run start:dev
 ```
-
-The backend API will be available at `http://localhost:3000`
 
 ### 3. Mobile App Setup
 
 ```bash
-# Navigate to React Native app directory
+# Navigate to React Native app directory (in a new terminal or tab)
 cd MovieRecommendationApp
 
 # Install dependencies
@@ -107,16 +134,63 @@ npm install
 
 # For iOS (macOS only)
 cd ios && pod install && cd ..
+```
+
+### 4. Running the Application
+
+**⚠️ Important: You need to run both backend and frontend simultaneously in separate terminals.**
+
+#### Terminal 1 - Start Backend Server:
+
+```bash
+cd backend/movie-advisor-api
+
+# Start the development server
+npm run start:dev
+```
+
+The backend API will be available at `http://localhost:3000`
+
+**Keep this terminal running** - you should see:
+
+```
+🚀 Movie Advisor API is running on:
+   - Local: http://localhost:3000
+   - Android Emulator: http://10.0.2.2:3000
+   - Network: http://0.0.0.0:3000
+```
+
+#### Terminal 2 - Start Mobile App:
+
+```bash
+cd MovieRecommendationApp
 
 # Start Metro bundler
 npm start
+```
+
+**Keep this terminal running** - Metro bundler should start successfully.
+
+#### Terminal 3 - Run on Device/Emulator:
+
+```bash
+cd MovieRecommendationApp
 
 # Run on Android (in a new terminal)
 npm run android
 
-# Run on iOS (in a new terminal, macOS only)
+# OR Run on iOS (in a new terminal, macOS only)
 npm run ios
 ```
+
+### 5. Verify Everything is Working
+
+1. **Backend**: Check that backend terminal shows no errors and displays the running message
+2. **Metro**: Check that Metro bundler is running without errors
+3. **App**: The mobile app should launch and connect to the backend successfully
+4. **API Keys**: Configure TMDb and OMDb API keys (see API Configuration section below)
+
+**If you encounter connection issues**, refer to the Backend Configuration and Troubleshooting sections below.
 
 ## 🔧 Backend Configuration
 
@@ -275,15 +349,6 @@ MovieAdvisorProject/
 
 ```bash
 cd backend/movie-advisor-api
-
-# Run unit tests
-npm run test
-
-# Run e2e tests
-npm run test:e2e
-
-# Run tests with coverage
-npm run test:cov
 ```
 
 ### Mobile App Testing
@@ -300,29 +365,80 @@ npm test
 
 ## 🔧 Development Commands
 
-### Backend (NestJS)
+### Quick Development (Recommended)
 
 ```bash
-npm run start:dev          # Development with hot reload
-npm run start:debug        # Debug mode
-npm run build              # Production build
-npm run start:prod         # Production mode
-npm run lint               # ESLint
-npm run format             # Prettier formatting
+# Start both backend and frontend
+npm run dev
+
+# In another terminal - run on device
+npm run android    # For Android
+npm run ios        # For iOS
+
+# Other useful commands
+npm run setup      # Install all dependencies
+npm run backend    # Run only backend
+npm run frontend   # Run only frontend
 ```
 
-### Mobile App (React Native)
+### Individual Commands
+
+**Remember: Run backend and frontend simultaneously for full functionality**
+
+#### Backend Commands:
 
 ```bash
+cd backend/movie-advisor-api
+npm run start:dev          # Development with hot reload
+npm run build              # Production build
+npm run test               # Run tests
+```
+
+#### Frontend Commands:
+
+```bash
+cd MovieRecommendationApp
 npm start                  # Start Metro bundler
-npm run android           # Run on Android
-npm run ios               # Run on iOS
+npm run android           # Run on Android (new terminal)
+npm run ios               # Run on iOS (new terminal)
 npm run lint              # ESLint
 npx react-native log-android  # View Android logs
 npx react-native log-ios      # View iOS logs
 ```
 
+### Development Workflow
+
+#### Simple Workflow (Recommended):
+
+1. **Start All Services**: `npm run dev`
+2. **Launch App**: `npm run android` or `npm run ios` (new terminal)
+3. **Monitor Logs**: Check the colored output in the main terminal
+
+#### Advanced Workflow:
+
+1. **Start Backend** (Terminal 1): `cd backend/movie-advisor-api && npm run start:dev`
+2. **Start Metro** (Terminal 2): `cd MovieRecommendationApp && npm start`
+3. **Launch App** (Terminal 3): `cd MovieRecommendationApp && npm run android` or `npm run ios`
+4. **Monitor Logs** (Optional Terminal 4): Use log commands above to debug issues
+
 ## 🔧 Troubleshooting
+
+### Common Setup Issues
+
+**⚠️ Quick Fix: Try the single command approach first: `npm run dev`**
+
+If you're having issues with the individual terminal setup, the single command approach often resolves common problems automatically.
+
+**⚠️ Most Important: Make sure both backend and frontend are running simultaneously before troubleshooting other issues.**
+
+### Concurrently Issues
+
+If `npm run dev` doesn't work:
+
+1. **Install concurrently**: Make sure you've run `npm install` in the root directory
+2. **Check paths**: Verify that both `backend/movie-advisor-api` and `MovieRecommendationApp` directories exist
+3. **Dependencies**: Run `npm run setup` to install all dependencies
+4. **Fallback**: Use the separate terminals approach (Option B) described above
 
 ### Android Emulator Network Issues
 
