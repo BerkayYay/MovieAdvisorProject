@@ -48,6 +48,59 @@ A comprehensive movie and TV show recommendation application built with React Na
 - **TMDb API** - The Movie Database for movie/TV data
 - **OMDb API** - Open Movie Database for additional movie details
 
+## 📱 Screenshots
+
+Get a visual overview of the Movie Advisor app's features and user interface:
+
+### Authentication & Profile Management
+
+<div align="center">
+
+|          Login Screen           |               Registration                |              Profile Screen               |
+| :-----------------------------: | :---------------------------------------: | :---------------------------------------: |
+| ![Login](screenshots/Login.png) | ![Registration](screenshots/Register.png) | ![Profile](screenshots/ProfileScreen.png) |
+
+</div>
+
+### Movie Discovery & Search
+
+<div align="center">
+
+|           Home/Discovery            |              Search Results              |                 Movie Details                  |
+| :---------------------------------: | :--------------------------------------: | :--------------------------------------------: |
+| ![Home](screenshots/HomeScreen.png) | ![Search](screenshots/SearchScreen2.png) | ![Movie Details](screenshots/MovieDetails.png) |
+
+</div>
+
+### Content Navigation & Preferences
+
+<div align="center">
+
+|              See All Screen              |                 Genre Preferences                 |                   Favorites                   |
+| :--------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
+| ![See All](screenshots/SeeAllScreen.png) | ![Genres](screenshots/GenrePreferencesScreen.png) | ![Favorites](screenshots/FavoritesScreen.png) |
+
+</div>
+
+### Profile & Account Management
+
+<div align="center">
+
+|                   Edit Profile                    |              Advanced Search              |                     Change Password                      |
+| :-----------------------------------------------: | :---------------------------------------: | :------------------------------------------------------: |
+| ![Edit Profile](screenshots/EditProfileScren.png) | ![Search 2](screenshots/SearchScreen.png) | ![Change Password](screenshots/ChangePasswordScreen.png) |
+
+</div>
+
+### Key Visual Features Highlighted:
+
+- **🎨 Modern UI Design**: Clean, intuitive interface with smooth animations
+- **🔍 Advanced Search**: Real-time search with genre filtering and suggestions
+- **📱 Responsive Layout**: Optimized for different screen sizes and orientations
+- **🎬 Rich Content Display**: High-quality movie posters and detailed information
+- **👤 User-Centric Design**: Personalized recommendations and profile management
+- **🚀 Smooth Navigation**: Effortless browsing between different app sections
+
 ## 📋 Prerequisites
 
 - **Node.js** >= 18.0.0
